@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+}
+
+.mainContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+}
+
+.slide1 {
+    background: #6eb6ef;
+}
+
+.slide2 {
+    background: #8c82fc;
+}
+
+.slide3 {
+    background: #ff5656;
+}
+
+.slide4 {
+    background: #ff8200;
+}
+
+.slide5 {
+    background: #2eb872;
+}
+
+.mainSlide {
+    /*text-align: center;*/
+}
+
+.headImg {
+    border-radius: 50%;
+    position: absolute;
+    top: 25%;
+    width: 24%;
+    left: 38%;
+}
+
+.slide1 > p {
+    font-size: 3rem;
+    height: 8rem;
+    line-height: 8rem;
+    text-align: center;
+}
+
+.myName {
+    margin-top: 72%;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    width: 16%;
+    left: 42%;
+    z-index: 2017;
+}
+
+/* -------- slide2 EDUCATION -------- */
+.slideTitle {
+    height: 8rem;
+    line-height: 8rem;
+    text-align: center;
+    font-size: 3.5rem;
+    font-family: 'Oswald';
+}
+
+.slideTitle:before {
+    left: 0;
+}
+
+.slideTitle:after {
+    right: 0;
+}
+
+.slideTitle:before, .slideTitle:after {
+    content: "";
+    position: absolute;
+    top: 4rem;
+    width: 30%;
+    height: 0;
+    border-top: .2rem solid white;
+}
+
+.juniorInfo, .seniorInfo, .universityInfo {
+    font-size: 2.6rem;
+    margin-top: 10rem;
+}
+
+.juniorInfo, .universityInfo {
+    margin-left: 1.5rem;
+    text-align: left;
+}
+
+.seniorInfo {
+    margin-right: 1.5rem;
+    text-align: right;
+}
+
+.eduYear {
+    font-size: 4rem;
+    letter-spacing: 2px;
+}
+
+.eduMonth {
+    font-size: 2rem;
+}
+
+.eduSchool {
+    margin-top: 1rem;
+}
+
+/* -------- slide3 EXPERIENCE -------- */
+.slide3 {
+    font-size: 2.2rem;
+}
+
+.expYear {
+    font-size: 3.5rem;
+}
+
+.expCo {
+    font-size: 3rem;
+    margin: .8rem auto;
+}
+
+.expJob {
+    font-size: 3rem;
+    margin-bottom: .8rem;
+}
+
+.flowUp {
+    text-align: center;
+}
+
+.flowUp > div {
+    margin-top: 3rem;
+}
+
+.expNext {
+    margin-top: 3rem;
+}
+
+/* -------- slide4 SKILLS -------- */
+.skiCircle {
+    width: 50rem;
+    height: 50rem;
+    background: #fafafa;
+    border-radius: 25rem;
+    margin: 30% auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.skiCircle label {
+    display: inline-block;
+}
+
+.skiCircle1 {
+    position: absolute;
+    z-index: 10;
+    width: 25rem;
+    height: 25rem;
+    font-size: 6rem;
+    line-height: 29.6rem;
+    text-indent: 8rem;
+    background-color: #2b93e6;
+}
+
+.skiCircle2 {
+    position: absolute;
+    z-index: 9;
+    top: -6.1rem;
+    left: 10rem;
+    width: 28rem;
+    height: 25rem;
+    font-size: 3rem;
+    line-height: 18rem;
+    text-indent: 16.5rem;
+    background-color: #0769ad;
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -moz-transform: rotate(45deg); /* Firefox */
+    -webkit-transform: rotate(45deg); /* Safari 和 Chrome */
+    -o-transform: rotate(45deg); /* Opera */
+}
+
+.skiCircle3 {
+    position: absolute;
+    z-index: 8;
+    right: 0;
+    bottom: 0;
+    width: 25rem;
+    height: 50rem;
+    font-size: 7rem;
+    line-height: 55rem;
+    text-indent: 4rem;
+    background-color: #40aa53;
+
+}
+
+.skiCircle4 {
+    position: absolute;
+    z-index: 7;
+    top: 29.8rem;
+    left: .5rem;
+    width: 30rem;
+    height: 24rem;
+    font-size: 5rem;
+    line-height: 16rem;
+    text-indent: 10rem;
+    background-color: #4fc08d;
+    transform: rotate(-21deg);
+    -ms-transform: rotate(-21deg); /* IE 9 */
+    -moz-transform: rotate(-21deg); /* Firefox */
+    -webkit-transform: rotate(-21deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-21deg); /* Opera */
+}
+
+.skiCircle5 {
+    position: absolute;
+    z-index: 6;
+    top: 16rem;
+    left: -4.6rem;
+    width: 28rem;
+    height: 15rem;
+    font-size: 3rem;
+    line-height: 22.4rem;
+    text-indent: 7rem;
+    background-color: #8c8c8c;
+    transform: rotate(-21deg);
+    -ms-transform: rotate(-21deg); /* IE 9 */
+    -moz-transform: rotate(-21deg); /* Firefox */
+    -webkit-transform: rotate(-21deg); /* Safari 和 Chrome */
+    -o-transform: rotate(-21deg); /* Opera */
+}
+
+/* -------- slide5 CONTACT -------- */
+.slide5 {
+    font-size: 3rem;
+}
+
+.slide5Content {
+    margin-top: 5rem;
+}
+
+.conRow {
+    margin: 5rem 2rem;
+}
+
+.conRow a {
+    color: white;
+}
+
+.conRowAuthor, .conRowTime {
+    font-size: 2rem;
+    position: absolute;
+    right: 0;
+    margin-right: 1rem;
+    letter-spacing: .2rem;
+}
+
+.conRowAuthor {
+    bottom: 15rem;
+}
+
+.conRowTime {
+    bottom: 10rem;
+}
+
+
+
