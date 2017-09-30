@@ -1,3 +1,30 @@
+function audioAutoPlay() {
+    var music = document.getElementById("music");
+    if ($(".musicImg").attr("src") == "img/musicPlay.gif") {
+        music.play();
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    audioAutoPlay();
+});
+
+document.addEventListener("WeixinJSBridgeReady", function () {
+    audioAutoPlay();
+}, false);
+
+function audioTogglePlay() {
+    var music = document.getElementById("music");
+    if (music.paused) {
+        music.play();
+        $(".musicImg").attr("src", "img/musicPlay.gif");
+    }
+    else {
+        music.pause();
+        $(".musicImg").attr("src", "img/musicStop.jpg");
+    }
+}
+
 $(function () {
     var mySwiper = new Swiper('.mainContainer', {
         direction: 'vertical',
@@ -12,38 +39,8 @@ $(function () {
             swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
         }
     });
-
-    function audioAutoPlay() {
-        var music = document.getElementById("music");
-        if ($(".musicImg").attr("src") == "img/musicPlay.gif") {
-            music.play();
-        }
-    }
-
-    function audioTogglePlay() {
-        var music = document.getElementById("music");
-        if (music.paused) {
-            music.play();
-            $(".musicImg").attr("src", "img/musicPlay.gif");
-        }
-        else {
-            music.pause();
-            $(".musicImg").attr("src", "img/musicStop.jpg");
-        }
-    }
-
+    
     $(".musicImg").click(function () {
         audioTogglePlay();
     });
 });
-
-document.addEventListener('DOMContentLoaded', function () {
-//     alert("DOMContentLoaded !!!!!");
-    audioAutoPlay();
-});
-
-document.addEventListener("WeixinJSBridgeReady", function () {
-//     alert("WeixinJSBridgeReady !!!!!");
-    audioAutoPlay();
-}, false);
-
