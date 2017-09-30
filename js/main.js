@@ -38,16 +38,12 @@ $(function () {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    alert("DOMContentLoaded !!!!!");
+//     alert("DOMContentLoaded !!!!!");
     audioAutoPlay();
 });
 
 document.addEventListener("WeixinJSBridgeReady", function () {
-    alert("WeixinJSBridgeReady !!!!!");
+//     alert("WeixinJSBridgeReady !!!!!");
     audioAutoPlay();
 }, false);
 
-window.addEventListener('devicemotion', function () {
-    alert("设备在摇晃！！！");
-    // audioTogglePlay();
-}, false);
