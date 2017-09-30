@@ -4,6 +4,21 @@
     font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
 }
 
+/* 音乐播放器 */
+.musicDiv {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    z-index: 99;
+}
+
+.musicImg {
+    position: relative;
+    width: 10rem;
+    left: -5rem;
+    border-radius: 5rem;
+}
+
 .mainContainer {
     position: absolute;
     width: 100%;
@@ -55,6 +70,7 @@
     margin-top: 72%;
 }
 
+/* 下一页 */
 .bottom {
     position: fixed;
     bottom: 0;
@@ -141,11 +157,11 @@
 }
 
 .flowUp > div {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 .expNext {
-    margin-top: 3rem;
+    margin-top: 1.5rem;
 }
 
 /* -------- slide4 SKILLS -------- */
@@ -154,7 +170,7 @@
     height: 50rem;
     background: #fafafa;
     border-radius: 25rem;
-    margin: 30% auto;
+    margin: 10rem auto;
     overflow: hidden;
     position: relative;
 }
