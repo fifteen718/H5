@@ -265,7 +265,8 @@
 /* -------- slide5 PHOTO -------- */
 .photoContainer {
     width: 100%;
-    padding: 7rem 0;
+    padding-top: 3rem;
+    padding-bottom: 7rem;
 /*     margin-top: 20%; */
 }
 
