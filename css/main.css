@@ -44,6 +44,10 @@
 }
 
 .slide5 {
+    background: #a3de83;
+}
+
+.slide6 {
     background: #2eb872;
 }
 
@@ -258,12 +262,36 @@
     -o-transform: rotate(-21deg); /* Opera */
 }
 
-/* -------- slide5 CONTACT -------- */
-.slide5 {
+/* -------- slide5 PHOTO -------- */
+.photoContainer {
+    width: 100%;
+    padding: 7rem 0;
+    margin-top: 20%;
+}
+
+.photoContainer .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 45rem;
+    height: 45rem;
+}
+
+.photoContainer .swiper-pagination-bullet {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 0.7rem;
+}
+
+.photoContainer .swiper-pagination-bullet-active {
+    background: white;
+}
+
+/* -------- slide6 CONTACT -------- */
+.slide6 {
     font-size: 3rem;
 }
 
-.slide5Content {
+.slide6Content {
     margin-top: 5rem;
 }
 
